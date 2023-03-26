@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.data {
+    background: url(undefined);
+    height: 100vh;
+    margin-left: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: #98c1d9;
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+label {
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 600;
+    background-color: rgb(55, 34, 246);
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(49, 27, 214);
+    color: white;
+    transition: 0.5s;
+}
+
+.side-menu {
+    position: fixed;
+    background-color: #98c1d9;
+    width: 250px;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.side-menu center img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+}
+
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a:hover {
+    background: rgb(20, 54, 165);
+    padding-left: 20px;
+}
+
+.side-menu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.side-menu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+nav .menu-bar {
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.side-menu .Logout {
+    display: none;
+}
+table{
+    position: absolute;
+    z-index: 2;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(32,32,32,.3);
+    text-align: center;
+}
+th,td{
+    padding: 12px 10px;
+}
+th{
+    background: #007FFF;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+tr:nth-child(odd){
+    background-color: #eee;
+}
+.column{
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.update-profile{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .update-profile form{
+    padding:20px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+ }
+ 
+ .update-profile form img{
+    height: 200px;
+    width: 200p;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+ }
+ 
+ .update-profile form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .update-profile form .flex .inputBox{
+    width: 49%;
+ }
+ 
+ .update-profile form .flex .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:var(--black);
+ }
+ 
+ .update-profile form .flex .inputBox .box{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding:12px 14px;
+    font-size: 17px;   
+    margin-top: 10px;
+ }
+ .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .btn{
+    color: white;
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 600;
+    background-color: rgb(55, 34, 246);
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: rgb(49, 27, 214);
+    color: white;
+    transition: 0.5s;
+}
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+  }
+ @media (max-width:650px){
+    .update-profile form .flex{
+       flex-wrap: wrap;
+       gap:0;
+    }
+    .update-profile form .flex .inputBox{
+       width: 100%;
+    }
+ }
+@media screen and (max-width: 600px){
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+@media (max-width:650px) {
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100px;
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .data {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:650px) {
+    .data {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        background-color: #4c516d;
+        transition: all 0.5s;
+    }
+
+    .side-menu a i {
+        display: none;
+    }
+
+    .side-menu a span {
+        display: block;
+    }
+
+    .side-menu .Logout {
+        display: block;
+    }
+
+    nav .menu-bar {
+        display: block;
+    }
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
